@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Student Info</title>
+  </head>
+  <body>
+
+    <h1>Student Info</h1>
+
+    <div class="student">
+
+      <h3>Name: <%= @student.name %></h3>
+      <h4>Grade: <%= @student.grade %></h4>
+
+    </div>
+
+      <h1>Courses</h1>
+
+      <% @courses.each do |course| %>
+        <div class="course">
+          <p>Name: <%= course.name %></p>
+          <p>Topic: <%= course.topic %></p>
+        </div>
+      <% end %>
